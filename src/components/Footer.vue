@@ -17,10 +17,11 @@ import Separator from "./ui/separator/Separator.vue";
             href="#"
             class="flex font-bold items-center"
           >
-            <ChevronsDown
+            <!-- <ChevronsDown
               class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white"
-            />
-
+            /> -->
+            
+            <img src="@/assets/invoicemu-logo.svg" class="h-12 mr-2 rounded-lg border " />
             <h3 class="text-2xl">invoicemu</h3>
           </a>
         </div>
