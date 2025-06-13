@@ -29,53 +29,36 @@ interface ReviewProps {
 
 const reviewList: ReviewProps[] = [
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe",
-    userName: "Product Manager",
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    name: "Budi Santoso",
+    userName: "Manajer Proyek",
     comment:
-      "Wow Vue + Shadcn-Vue is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
+      "Aplikasi ini sangat membantu pekerjaan saya sehari-hari. Fitur-fiturnya lengkap dan mudah digunakan.",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
+    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    name: "Siti Rahmawati",
+    userName: "Pengusaha",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
+      "Saya sangat puas dengan layanan dan kemudahan yang diberikan. Proses pembuatan invoice jadi jauh lebih cepat.",
+    rating: 4.9,
+  },
+  {
+    image: "https://randomuser.me/api/portraits/men/65.jpg",
+    name: "Agus Pratama",
+    userName: "Pengusaha",
+    comment:
+      "Desainnya modern dan responsif. Sangat cocok untuk kebutuhan bisnis saya.",
+    rating: 5.0,
+  },
+  {
+    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    name: "Dewi Lestari",
+    userName: "Freelancer",
+    comment:
+      "Saya merekomendasikan aplikasi ini untuk siapa saja yang ingin mengelola invoice dengan mudah dan efisien.",
     rating: 4.8,
-  },
-
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Adam Johnson",
-    userName: "Chief Technology Officer",
-    comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    rating: 4.9,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Ethan Parker",
-    userName: "Data Scientist",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    rating: 5.0,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Ava Mitchell",
-    userName: "IT Project Manager",
-    comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
-    rating: 5.0,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Isabella Reed",
-    userName: "DevOps Engineer",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    rating: 4.9,
   },
 ];
 </script>
@@ -90,8 +73,11 @@ const reviewList: ReviewProps[] = [
         Testimonials
       </h2>
 
-      <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">
+      <!-- <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">
         Hear What Our 1000+ Clients Say
+      </h2> -->
+      <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">
+        Hear What Our Clients Say
       </h2>
     </div>
 
@@ -122,13 +108,13 @@ const reviewList: ReviewProps[] = [
 
             <CardHeader>
               <div class="flex flex-row items-center gap-4">
-                <Avatar>
+                <!-- <Avatar>
                   <AvatarImage
                     src="https://www.radix-vue.com/logo.svg"
                     alt="@radix-vue"
                   />
                   <AvatarFallback>SV</AvatarFallback>
-                </Avatar>
+                </Avatar> -->
 
                 <div class="flex flex-col">
                   <CardTitle class="text-lg">{{ review.name }}</CardTitle>

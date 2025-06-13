@@ -5,6 +5,8 @@ import { useColorMode } from "@vueuse/core";
 const mode = useColorMode();
 mode.value = "dark";
 
+import { MousePointerClick } from 'lucide-vue-next';
+
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -41,21 +43,29 @@ interface FeatureProps {
 
 const routeList: RouteProps[] = [
   {
+    href: "#hero",
+    label: "Home",
+  },
+  {
+    href: "#features",
+    label: "Features",
+  },
+  {
     href: "#testimonials",
     label: "Testimonials",
   },
   {
-    href: "#team",
-    label: "Team",
+    href: "#pricing",
+    label: "Pricing",
   },
   {
     href: "#contact",
     label: "Contact",
   },
-  {
-    href: "#faq",
-    label: "FAQ",
-  },
+  // {
+  //   href: "#faq",
+  //   label: "FAQ",
+  // },
 ];
 
 const featureList: FeatureProps[] = [
@@ -93,7 +103,7 @@ const isOpen = ref<boolean>(false);
       <ChevronsDown
         class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white"
       />
-      ShadcnVue</a
+      invoicemu</a
     >
     <!-- Mobile -->
     <div class="flex items-center lg:hidden">
@@ -119,12 +129,16 @@ const isOpen = ref<boolean>(false);
                   <ChevronsDown
                     class="bg-gradient-to-tr from-primary/70 via-primary to-primary/70 rounded-lg size-9 mr-2 border text-white"
                   />
-                  ShadcnVue
+                  invoicemu
                 </a>
               </SheetTitle>
             </SheetHeader>
 
             <div class="flex flex-col gap-2">
+            <Button>
+              Coba Sekarang
+              <MousePointerClick />
+            </Button>
               <Button
                 v-for="{ href, label } in routeList"
                 :key="label"
@@ -154,7 +168,7 @@ const isOpen = ref<boolean>(false);
     <!-- Desktop -->
     <NavigationMenu class="hidden lg:block">
       <NavigationMenuList>
-        <NavigationMenuItem>
+        <!-- <NavigationMenuItem>
           <NavigationMenuTrigger class="bg-card text-base">
             Features
           </NavigationMenuTrigger>
@@ -181,7 +195,7 @@ const isOpen = ref<boolean>(false);
               </ul>
             </div>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem> -->
 
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
@@ -202,9 +216,13 @@ const isOpen = ref<boolean>(false);
     </NavigationMenu>
 
     <div class="hidden lg:flex">
+      <Button>
+        Coba Sekarang
+         <MousePointerClick class="ml-3" />
+      </Button>
       <ToggleTheme />
 
-      <Button
+      <!-- <Button
         as-child
         size="sm"
         variant="ghost"
@@ -217,7 +235,7 @@ const isOpen = ref<boolean>(false);
         >
           <GithubIcon class="size-5" />
         </a>
-      </Button>
+      </Button> -->
     </div>
   </header>
 </template>

@@ -10,6 +10,12 @@ import {
   PictureInPicture,
   MousePointerClick,
   Newspaper,
+  ShoppingCart,
+  ShoppingBasket,
+  CreditCard,
+  Users,
+  Package,
+  Building2,
 } from "lucide-vue-next";
 
 interface FeaturesProps {
@@ -20,40 +26,40 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
-    icon: "tabletSmartphone",
-    title: "Mobile Friendly",
+    icon: "shoppingCart",
+    title: "Penjualan",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "Kelola semua transaksi penjualan dengan sistem invoice otomatis dan laporan real-time",
   },
   {
-    icon: "badgeCheck",
-    title: "Social Proof",
+    icon: "shoppingBasket",
+    title: "Pembelian",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "Catat dan monitor semua pembelian dengan tracking supplier dan kontrol inventori",
   },
   {
-    icon: "goal",
-    title: "Targeted Content",
+    icon: "creditCard",
+    title: "Pembayaran",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "Sistem pembayaran terintegrasi dengan multiple metode pembayaran dan reminder otomatis",
   },
   {
-    icon: "pictureInPicture",
-    title: "Strong Visuals",
+    icon: "users",
+    title: "Customer",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "Database customer lengkap dengan riwayat transaksi dan analisis perilaku pembelian",
   },
   {
-    icon: "mousePointerClick",
-    title: "Clear CTA",
+    icon: "building2",
+    title: "Supplier",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "Manajemen supplier terpusat dengan evaluasi performa dan kontrak kerjasama",
   },
   {
-    icon: "newspaper",
-    title: "Clear Headline",
+    icon: "package",
+    title: "Produk",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "Katalog produk dengan manajemen stok, harga dinamis, dan kategori yang fleksibel",
   },
 ];
 
@@ -67,6 +73,12 @@ const iconMap: Record<
   | typeof MousePointerClick
   | typeof MessageCircle
   | typeof Newspaper
+  | typeof ShoppingCart
+  | typeof ShoppingBasket
+  | typeof CreditCard
+  | typeof Users
+  | typeof Package
+  | typeof Building2
 > = {
   tabletSmartphone: TabletSmartphone,
   badgeCheck: BadgeCheck,
@@ -76,6 +88,12 @@ const iconMap: Record<
   mousePointerClick: MousePointerClick,
   messageCircle: MessageCircle,
   newspaper: Newspaper,
+  shoppingCart: ShoppingCart,
+  shoppingBasket: ShoppingBasket,
+  creditCard: CreditCard,
+  users: Users,
+  package: Package,
+  building2: Building2,
 };
 </script>
 
@@ -89,13 +107,11 @@ const iconMap: Record<
     </h2>
 
     <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">
-      What Makes Us Different
+      Fitur Lengkap untuk Bisnis Anda
     </h2>
 
     <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-      fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-      facere tenetur.
+      Semua yang Anda butuhkan untuk mengelola bisnis dalam satu aplikasi
     </h3>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
