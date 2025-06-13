@@ -9,11 +9,11 @@ import { MousePointerClick } from 'lucide-vue-next';
 
 import {
   NavigationMenu,
-  NavigationMenuContent,
+  // NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
+  // NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import {
   Sheet,
@@ -28,7 +28,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
 import { ChevronsDown, Menu } from "lucide-vue-next";
-import GithubIcon from "@/icons/GithubIcon.vue";
+// import GithubIcon from "@/icons/GithubIcon.vue";
 import ToggleTheme from "./ToggleTheme.vue";
 
 interface RouteProps {
@@ -36,10 +36,10 @@ interface RouteProps {
   label: string;
 }
 
-interface FeatureProps {
-  title: string;
-  description: string;
-}
+// interface FeatureProps {
+//   title: string;
+//   description: string;
+// }
 
 const routeList: RouteProps[] = [
   {
@@ -68,22 +68,22 @@ const routeList: RouteProps[] = [
   // },
 ];
 
-const featureList: FeatureProps[] = [
-  {
-    title: "Showcase Your Value ",
-    description: "Highlight how your product solves user problems.",
-  },
-  {
-    title: "Build Trust",
-    description:
-      "Leverages social proof elements to establish trust and credibility.",
-  },
-  {
-    title: "Capture Leads",
-    description:
-      "Make your lead capture form visually appealing and strategically.",
-  },
-];
+// const featureList: FeatureProps[] = [
+//   {
+//     title: "Showcase Your Value ",
+//     description: "Highlight how your product solves user problems.",
+//   },
+//   {
+//     title: "Build Trust",
+//     description:
+//       "Leverages social proof elements to establish trust and credibility.",
+//   },
+//   {
+//     title: "Capture Leads",
+//     description:
+//       "Make your lead capture form visually appealing and strategically.",
+//   },
+// ];
 
 const isOpen = ref<boolean>(false);
 </script>
