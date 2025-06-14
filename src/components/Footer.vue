@@ -28,14 +28,14 @@ import Separator from "./ui/separator/Separator.vue";
 
         <div class="flex flex-col gap-2">
           <h3 class="font-bold text-lg">Contact</h3>
-          <div>
+          <!-- <div>
             <a
               href="#"
               class="opacity-60 hover:opacity-100"
             >
               Github
             </a>
-          </div>
+          </div> -->
 
           <div>
             <a
