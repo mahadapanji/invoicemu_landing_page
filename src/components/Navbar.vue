@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ref } from "vue";
+import { ref, watch } from "vue";
 
 import { useColorMode } from "@vueuse/core";
 const mode = useColorMode();
@@ -30,7 +30,6 @@ import { Separator } from "@/components/ui/separator";
 import { ChevronsDown, Menu } from "lucide-vue-next";
 // import GithubIcon from "@/icons/GithubIcon.vue";
 import ToggleTheme from "./ToggleTheme.vue";
-
 interface RouteProps {
   href: string;
   label: string;
@@ -86,6 +85,13 @@ const routeList: RouteProps[] = [
 // ];
 
 const isOpen = ref<boolean>(false);
+
+watch(isOpen, (val) => {
+  if (val) {
+    mode.value = "light";
+  }
+});
+
 </script>
 
 <template>
