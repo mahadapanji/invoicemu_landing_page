@@ -124,7 +124,7 @@ watch(isOpen, (val) => {
     <div class="flex lg:hidden">
       <Button as-child>
         <a href="https://app.invoicemu.com/" target="_blank" rel="noopener">
-          Coba Sekarang
+          Coba Gratis
           <MousePointerClick />
         </a>
       </Button>
@@ -239,7 +239,7 @@ watch(isOpen, (val) => {
     <div class="hidden lg:flex">
       <Button as-child>
         <a href="https://app.invoicemu.com/" target="_blank" rel="noopener">
-          Coba Sekarang
+          Coba Gratis
           <MousePointerClick class="ml-3" />
         </a>
       </Button>
