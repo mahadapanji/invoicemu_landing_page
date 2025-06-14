@@ -3,7 +3,9 @@ import { ref, watch } from "vue";
 
 import { useColorMode } from "@vueuse/core";
 const mode = useColorMode();
-mode.value = "light";
+// Ganti localStorage menjadi sessionStorage
+sessionStorage.setItem("vueuse-color-mode", "light");
+mode.value = sessionStorage.getItem("vueuse-color-mode") || "light";
 
 import { MousePointerClick } from 'lucide-vue-next';
 
@@ -88,7 +90,9 @@ const isOpen = ref<boolean>(false);
 
 watch(isOpen, (val) => {
   if (val) {
-    mode.value = "light";
+    if (mode.value !== sessionStorage.getItem("vueuse-color-mode")) {
+      return;
+    }
   }
 });
 
