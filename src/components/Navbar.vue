@@ -3,7 +3,7 @@ import { ref } from "vue";
 
 import { useColorMode } from "@vueuse/core";
 const mode = useColorMode();
-mode.value = "dark";
+mode.value = "light";
 
 import { MousePointerClick } from 'lucide-vue-next';
 
@@ -106,8 +106,18 @@ const isOpen = ref<boolean>(false);
       <img src="@/assets/invoicemu-logo.svg" class="w-9 h-9 mr-2 rounded-lg border" />
       invoicemu</a
     >
+    <!-- Tombol "Coba Sekarang" hanya tampil di mobile -->
+    <div class="flex lg:hidden">
+      <Button as-child>
+        <a href="https://app.invoicemu.com/" target="_blank" rel="noopener">
+          Coba Sekarang
+          <MousePointerClick />
+        </a>
+      </Button>
+    </div>
     <!-- Mobile -->
     <div class="flex items-center lg:hidden">
+         
       <Sheet v-model:open="isOpen">
         <SheetTrigger as-child>
           <Menu
@@ -136,10 +146,6 @@ const isOpen = ref<boolean>(false);
             </SheetHeader>
 
             <div class="flex flex-col gap-2">
-            <Button>
-              Coba Sekarang
-              <MousePointerClick />
-            </Button>
               <Button
                 v-for="{ href, label } in routeList"
                 :key="label"
@@ -217,9 +223,11 @@ const isOpen = ref<boolean>(false);
     </NavigationMenu>
 
     <div class="hidden lg:flex">
-      <Button>
-        Coba Sekarang
-         <MousePointerClick class="ml-3" />
+      <Button as-child>
+        <a href="https://app.invoicemu.com/" target="_blank" rel="noopener">
+          Coba Sekarang
+          <MousePointerClick class="ml-3" />
+        </a>
       </Button>
       <ToggleTheme />
 

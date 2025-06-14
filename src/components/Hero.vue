@@ -41,11 +41,16 @@ import { ArrowRight } from "lucide-vue-next";
         </p>
 
         <div class="space-y-4 md:space-y-0 md:space-x-4">
-          <Button class="w-5/6 md:w-1/4 font-bold group/arrow">
-            Coba Sekarang
-            <ArrowRight
-              class="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform"
-            />
+          <Button
+            as-child
+            class="w-5/6 md:w-1/4 font-bold group/arrow"
+          >
+            <a href="https://app.invoicemu.com/" target="_blank" rel="noopener">
+              Coba Sekarang
+              <ArrowRight
+                class="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform"
+              />
+            </a>
           </Button>
 
           <!-- <Button

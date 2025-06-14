@@ -140,12 +140,16 @@ const plans: PlanProps[] = [
         </CardContent>
 
         <CardFooter>
-          <Button
+            <Button
             :variant="popular === PopularPlan?.NO ? 'secondary' : 'default'"
             class="w-full"
-          >
+            as="a"
+            href="https://app.invoicemu.com/"
+            target="_blank"
+            rel="noopener"
+            >
             {{ buttonText }}
-          </Button>
+            </Button>
         </CardFooter>
       </Card>
     </div>
