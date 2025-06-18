@@ -15,7 +15,7 @@ import {
 import { Textarea } from "./ui/textarea";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
-import { AlertCircle, Building2, Phone, Mail } from "lucide-vue-next";
+import { AlertCircle, Phone, Mail } from "lucide-vue-next";
 
 interface ContactFormeProps {
   firstName: string;
