@@ -64,14 +64,14 @@ const handleSubmit = () => {
         </p>
 
         <div class="flex flex-col gap-4">
-          <div>
+          <!-- <div>
             <div class="flex gap-2 mb-1">
               <Building2 />
               <div class="font-bold">Find Us</div>
             </div>
 
             <div>Perumahan pabuaran asri blok a6 no 52, Bogor</div>
-          </div>
+          </div> -->
 
           <div>
             <div class="flex gap-2 mb-1">
