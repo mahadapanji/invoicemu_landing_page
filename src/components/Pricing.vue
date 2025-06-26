@@ -29,7 +29,7 @@ const plans: PlanProps[] = [
   {
     title: "Starter",
     popular: 1,
-    price: "39.000",
+    price: "Gratis",
     description:
       "Perfect untuk umkm yang baru memulai",
     buttonText: "Daftar Sekarang",
@@ -121,9 +121,10 @@ const plans: PlanProps[] = [
           <CardDescription class="pb-4">{{ description }}</CardDescription>
 
           <div>
-            <span class="text-3xl font-bold">Rp{{ price }}</span>
+            <!-- <span class="text-3xl font-bold">Rp{{ price }}</span>
             <span class="text-muted-foreground"> /bulan</span><br />
-            <span class="text-xs  text-red-500">*30 Hari Uji Coba Gratis</span>
+            <span class="text-xs  text-red-500">*30 Hari Uji Coba Gratis</span> -->
+            <span class="text-3xl font-bold">{{ price }}</span>
           </div>
         </CardHeader>
 
